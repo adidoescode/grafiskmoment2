@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moment 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="bilagor/favicon.png">
+</head>
+
+<body>
+    <header>
+        <div class="logo"><a href="index.html">
+                <img src="bilagor/logo.svg" alt="Julgran Logo">
+            </a>
+        </div>
+        <button class="menu-btn open" id="open-menu">
+            <span class="menu-icon">
+                <span class="bars"></span>
+                <span class="bars"></span>
+                <span class="bars"></span>
+            </span>
+            <span class="menu-text">Meny</span>
+        </button>
+        <nav id="nav-menu">
+
+            <button class="menu-btn close" id="close-menu">
+                <span class="menu-icon">
+                    <span class="bars cross1"></span>
+                    <span class="bars cross2"></span>
+                </span>
+                <span class="menu-text">Stäng</span>
+            </button>
+            <ul>
+                <li><a href="index.html">Startsida</a></li>
+                <li><a href="about.html">Om mig</a></li>
+                <li><a href="pictures.html">Bildbehandling</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <picture>
+            <source media="(min-width: 1521px)" srcset="bilagor/stor_bild.jpg">
+            <source media="(min-width: 801px) and (max-width:1520px)" srcset="bilagor/mellan_bild.jpg">
+            <img src="bilagor/liten_bild.jpg" alt="Ett stearinljus i en skål med etikett som det står God Jul på"
+                style="width:100%;">
+        </picture>
+        <div class="products">
+            <h1>Senaste produkterna</h1>
+        </div>
+    </main>
+    <footer>
+        <p> Adam Sjögren, Webbutveckling 2023</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
